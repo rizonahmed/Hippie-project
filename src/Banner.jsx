@@ -26,7 +26,7 @@ const Banner = () => {
                             className=''
                             src={hippie} alt="hippie" />
                     </div>
-                    <p className='text-2xl font-semibold text-white pt-10 '>
+                    <p className='text-2xl  text-white pt-10 custom-text'>
                         A hippie rejects mainstream values for a lifestyle centered on peace, love, freedom, and non-materialism.
                     </p>
                     <input type="text" />

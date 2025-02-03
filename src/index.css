@@ -11,6 +11,31 @@ background-size: 100% 100%;
 background-image: url('../src/assets/herobg.png');
 background-repeat: no-repeat;
 background-size: 100% 100%;
+}
  
 
+.about-bg{
+background-image: url('../src/assets/aboutbg.png');
+background-repeat: no-repeat;
+
+ 
+}
+
+.rote {
+  transition: transform 2s ease-in-out; /* Smooth transition for rotation */
+}
+
+.rote:hover {
+  transform: rotate(360deg); /* Rotate 360 degrees immediately on hover */
+}
+
+@font-face {
+  font-family: 'HeyComic';
+  src: url('/src/Hey\ Comic.ttf') format('truetype'); /* Adjust the path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-text {
+  font-family: 'HeyComic', sans-serif;
 }

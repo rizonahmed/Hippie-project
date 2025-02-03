@@ -28,7 +28,7 @@ const Hero = () => {
 
             <div className='w-full  '>
                 <img
-                className='w-full -mt-7  sm:-mt-14 md:-mt- xl:-mt-20 2xl:-mt-24 '
+                className='w-full -mt-7 z-10 sm:-mt-14 md:-mt- xl:-mt-20 2xl:-mt-24 '
                 src={layer} alt="" />
             </div>
             </div>
