@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+.main-bg{
+background-image: url('../src/assets/mainbg.png');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+.hero-bg{
+background-image: url('../src/assets/herobg.png');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+ 
+
+}
