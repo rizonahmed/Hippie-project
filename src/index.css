@@ -212,3 +212,80 @@ background-position: center;
 }
 
 
+
+
+
+
+
+
+/* footer er jnno  */
+
+.hover-move {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Hover Effect - Rotate Left & Right First, Then Move Up */
+.hover-move:hover {
+  animation: moveRotateThenUp 1.5s ease-in-out forwards;
+}
+
+/* When Mouse Leaves - Reset Position Smoothly */
+.hover-move:not(:hover) {
+  animation: resetPosition 0.5s ease-in-out forwards;
+}
+
+/* Keyframes for Rotation First, Then Move Up */
+@keyframes moveRotateThenUp {
+  0% {
+    transform: scale(1.1) rotate(4deg) translateY(0);
+  }
+  33% {
+    transform: scale(1.1) rotate(-4deg) translateY(0);
+  }
+  66% {
+    transform: scale(1.1) rotate(2deg) translateY(0);
+  }
+  100% {
+    transform: scale(1.2) rotate(-1deg) translateY(-10px);
+  }
+}
+
+/* Keyframes for Resetting Position */
+@keyframes resetPosition {
+  0% {
+    transform: scale(1.1) rotate(0deg) translateY(-10px);
+  }
+  100% {
+    transform: scale(1) rotate(0deg) translateY(0);
+  }
+}
+
+
+
+
+
+
+
+/* Box styling */
+.box {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: transform 1s ease-in-out;
+}
+/* Hover effect */
+.box:hover {
+  animation: vibrate 1s ease-in-out;
+  transform: scale(1.04);
+}
+
+/* Keyframes for vibration */
+@keyframes vibrate {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-1px) rotate(-4deg); }
+  20%, 40%, 60%, 80% { transform: translateX(1px) rotate(4deg); }
+}
+
+

@@ -34,7 +34,7 @@ const Tokenomics = () => {
                     {/* Left Side */}
                     <div className="flex flex-row lg:flex-col gap-6">
                         <img src={one} alt="Tokenomics 1" className="w-full max-w-sm mx-auto  mb-20 z-10 rotate-hover" />
-                        <img src={three} alt="Tokenomics 3" className="w-full lg:w-[230px] xl:w-[300px] 2xl:w-[320px] max-w-sm mx-auto absolute left-16 xl:left-16 2xl:left-36 z-10  bottom-10 rotate-hover" />
+                        <img src={three} alt="Tokenomics 3" className="w-full lg:w-[230px] xl:w-[300px] 2xl:w-[320px] max-w-sm mx-auto absolute left-16 xl:left-16 2xl:left-30 z-10  bottom-10 rotate-hover" />
                     </div>
 
                     {/* Center Rotate Image */}

@@ -35,9 +35,9 @@ const Hero = () => {
                 <Banner></Banner>
 
 
-                <div className='w-full  '>
+                <div className='w-full z-10 '>
                     <img
-                        className='w-full -mt-6 z-10 sm:-mt-10 lg:-mt-14 xl:-mt-20 2xl:-mt-24 '
+                        className='w-full -mt-6 relative z-50 sm:-mt-10 lg:-mt-14 xl:-mt-20 2xl:-mt-24 '
                         src={layer} alt="" />
                 </div>
             </div>

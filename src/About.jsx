@@ -3,7 +3,22 @@ import aboutImg from './assets/aboutimg.png';
 import Tokenomics from './Tokenomics';
 import layer2  from './assets/layer2.png'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
+
+
 const About = () => {
+
+     useEffect(() => {
+            AOS.init({
+                duration: 1000,
+                easing: "ease-in-out",
+                once: true,
+            });
+    
+            AOS.refresh();  
+        }, []);
     return (
       <div>
           <div id='about' className="bg-[#8B64FA] h-full w-full -mt-1 pb-20 ">
@@ -16,8 +31,11 @@ const About = () => {
                 <div className='text-center'>
                     <div>
                     <img
+                    data-aos="zoom-in"
                     className='pt-20 mx-auto w-6/12 md:w-auto' src={about} alt="" />
-                    <p className='pt-8 text-white px-5 lg:px-0 lg:text-lg xl:text-2xl custom-text'>Hippie is a revolutionary movement on the Solana <br /> blockchain, designed to bring together <br /> like-minded individuals who are ready to embrace a new era of love, oneness, and collective growth. <br /> In a world increasingly defined by fear, greed, and money, <br /> Hippie aims to shift the narrative towards generosity, connection, and higher consciousness.</p>
+                    <p 
+                     data-aos="zoom-in"
+                    className='pt-8 text-white px-5 lg:px-0 lg:text-lg xl:text-2xl custom-text'>Hippie is a revolutionary movement on the Solana <br /> blockchain, designed to bring together <br /> like-minded individuals who are ready to embrace a new era of love, oneness, and collective growth. <br /> In a world increasingly defined by fear, greed, and money, <br /> Hippie aims to shift the narrative towards generosity, connection, and higher consciousness.</p>
                     </div>
 
                 </div>
