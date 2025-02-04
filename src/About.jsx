@@ -8,16 +8,16 @@ const About = () => {
       <div>
           <div id='about' className="bg-[#8B64FA] h-full w-full -mt-1 pb-20 ">
              
-             <div className='lg:w-10/12 mx-auto pt-16 flex  flex-col-reverse lg:flex-row'>
+             <div className='lg:w-10/12 mx-auto lg:pt-16 flex  flex-col-reverse lg:flex-row'>
                 <div className='w-10/12 flex justify-center '>
                     <img
-                    className='xl:w-[80%] ' src={aboutImg} alt="" />
+                    className='abouts 2xl:w-[70%] ' src={aboutImg} alt="" />
                 </div>
                 <div className='text-center'>
                     <div>
                     <img
-                    className='pt-20 mx-auto w-' src={about} alt="" />
-                    <p className='pt-8 text-white text-2xl custom-text'>Hippie is a revolutionary movement on the Solana <br /> blockchain, designed to bring together <br /> like-minded individuals who are ready to embrace a new era of love, oneness, and collective growth. <br /> In a world increasingly defined by fear, greed, and money, <br /> Hippie aims to shift the narrative towards generosity, connection, and higher consciousness.</p>
+                    className='pt-20 mx-auto w-6/12 md:w-auto' src={about} alt="" />
+                    <p className='pt-8 text-white px-5 lg:px-0 lg:text-lg xl:text-2xl custom-text'>Hippie is a revolutionary movement on the Solana <br /> blockchain, designed to bring together <br /> like-minded individuals who are ready to embrace a new era of love, oneness, and collective growth. <br /> In a world increasingly defined by fear, greed, and money, <br /> Hippie aims to shift the narrative towards generosity, connection, and higher consciousness.</p>
                     </div>
 
                 </div>
@@ -30,7 +30,7 @@ const About = () => {
         </div>
         <div className='w-full bg-[#8B64FA] '>
         <img
-          className='w-full  '
+          className='w-full  bg-[#8B64FA]'
           src={layer2} alt="" />
       </div>
 
