@@ -22,6 +22,7 @@ background-repeat: no-repeat;
 background-image: url('../src/assets/Vector\ \(7\).png');
 background-repeat: no-repeat;
 background-position: center;
+overflow-clip-margin: hidden;
 }
 
 .rote {
@@ -93,54 +94,6 @@ background-position: center;
 
 
 
-
-@keyframes shakeForward {
-  0% {
-    transform: scale(1) rotate(0deg) translate(0, 0);
-  }
-  25% {
-    transform: scale(1.05) rotate(-3deg) ; /* Top-Left */
-  }
-  50% {
-    transform: scale(1) rotate(0deg) translate(0, 0);
-  }
-  75% {
-    transform: scale(1.05) rotate(5deg)  ; /* Bottom-Right */
-  }
-  100% {
-    transform: scale(1) rotate(0deg) translate(0, 0);
-  }
-}
-
-@keyframes shakeReverse {
-  0% {
-    transform: scale(1) rotate(0deg) translate(0, 0);
-  }
-  25% {
-    transform: scale(1.1) rotate(-1deg) ; /* Bottom-Right */
-  }
-  50% {
-    transform: scale(1) rotate(0deg) translate(0, 0);
-  }
-  75% {
-    transform: scale(1.1) rotate(1deg) ; /* Top-Left */
-  }
-  100% {
-    transform: scale(1) rotate(0deg) translate(0, 0);
-  }
-}
-
-.logo-forward {
-  animation: shakeForward  ease-in-out infinite; /* Infinite loop */
-}
-
-.logo-reverse {
-  animation: shakeReverse  ease-in-out infinite; /* Infinite loop */
-}
-
-
-
-
 .rotate-hover {
   transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -148,72 +101,6 @@ background-position: center;
 .rotate-hover:hover {
   transform: rotate(8deg) scale(1.2);
 }
-
-
-
-/* .hero-container {
-  position: relative;
-  display: inline-block;
-}
-
-.hero-image {
-  transition: transform 0.5s ease-in-out;
-}
-
-.hero-container:hover .hero-image {
-  transform: scale(1.1);
-}
-
-.love-image {
-  position: absolute;
-  top: 0;
-  right: 28px;
-  opacity: 0;
-  transform: scale(0.5) translateY(-10px);
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.hero-container:hover .love-image {
-  opacity: 1;
-  transform: scale(1) translateY(0);
-} */
-
-
-/* Custom class for image hover effect */
-/* Custom class for the image hover effect */
-/* Custom class for image hover effect */
-.abouts {
-  position: relative;
-  transition: transform 0.5s ease-in-out;
-}
-
-.abouts:hover {
-  transform: scale(1.05); /* Slightly scale the image */
-}
-
-/* For moving the image to the right when hovering left side of image */
-.abouts:hover:before {
-  transform: translateX(10px);
-}
-
-/* For moving the image to the left when hovering right side of image */
-.abouts:hover:after {
-  transform: translateX(-10px);
-}
-
-/* For moving the image to the bottom when hovering top side of image */
-.abouts:hover .top {
-  transform: translateY(10px);
-}
-
-/* For moving the image to the top when hovering bottom side of image */
-.abouts:hover .bottom {
-  transform: translateY(-10px);
-}
-
-
-
-
 
 
 

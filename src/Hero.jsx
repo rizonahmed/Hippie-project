@@ -8,7 +8,7 @@ const Hero = () => {
 
 
                 {/* nav startt here   */}
-                <nav className="w-10/12 mx-auto pt-6 flex flex-wrap justify-between items-center">
+                <nav className="w-11/12 mx-auto pt-6 flex flex-wrap justify-between items-center">
                     {/* Logo */}
                     <div>
                         <img src={logo} alt="Hippie Logo" className="w-24 sm:w-28 md:w-32 lg:w-40" />
@@ -17,16 +17,17 @@ const Hero = () => {
                     {/* Navigation Menu */}
                     <div>
                         <ul className="flex flex-wrap gap-3 sm:gap-4 md:gap-6">
-                            <li className="bg-white/20 backdrop-blur-2xl px-3 sm:px-4 md:px-6 py-3 sm:py-2 md:py-3 lg:py-3 lg:pb-4 cursor-pointer rounded-lg text-xs sm:text-sm md:text-lg lg:text-2xl  text-white">
+                            <li className="bg-white/20 backdrop-blur-2xl px-2 sm:px-4 md:px-6 py-2 sm:py-2 md:py-3 lg:py-3 lg:pb-4 cursor-pointer rounded-lg text-xs sm:text-sm md:text-lg lg:text-2xl text-white">
                                 <a href="#about">About</a>
                             </li>
-                            <li className="bg-white/20 backdrop-blur-2xl px-3 sm:px-4 md:px-6 py-3 sm:py-2 md:py-3 lg:py-3 lg:pb-4 cursor-pointer rounded-lg text-xs sm:text-sm md:text-lg lg:text-2xl  text-white">
-                                <a href="#tokenmics">Tokenomics</a>
+                            <li className="bg-white/20 backdrop-blur-2xl px-2 sm:px-4 md:px-6 py-2 sm:py-2 md:py-3 lg:py-3 lg:pb-4 cursor-pointer rounded-lg text-xs sm:text-sm md:text-lg lg:text-2xl text-white">
+                                <a href="#tokenomics">Tokenomics</a>
                             </li>
-                            <li className="bg-white/20 backdrop-blur-2xl px-3 sm:px-4 md:px-6 py-3 sm:py-2 md:py-3 lg:py-3 lg:pb-4 cursor-pointer rounded-lg text-xs sm:text-sm md:text-lg lg:text-2xl  text-white">
+                            <li className="bg-white/20 backdrop-blur-2xl px-2 sm:px-4 md:px-6 py-2 sm:py-2 md:py-3 lg:py-3 lg:pb-4 cursor-pointer rounded-lg text-xs sm:text-sm md:text-lg lg:text-2xl text-white">
                                 <a href="#buy">How to Buy</a>
                             </li>
                         </ul>
+
                     </div>
                 </nav>
 

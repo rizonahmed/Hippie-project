@@ -5,11 +5,13 @@ import x from './assets/x.png';
 import tele from './assets/tele.png';
 import bnb from './assets/bnb.png';
 import eagle from './assets/eagle.png';
-import animation from './assets/animation.json';
+import youtube from './assets/youtube.png';
+import tiktok from './assets/tiktok.png'
+import animation from './assets/hvr.gif';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Lottie from 'lottie-react';
+import { IoLogoInstagram } from 'react-icons/io';
 
 const Banner = () => {
     const [copied, setCopied] = useState(false);
@@ -40,7 +42,7 @@ const Banner = () => {
                 <div className=''>
                     <div className='pt-20 xl:pt-32'>
                         <img
-                            className={`hover-scale w-[75%] ${isHovered ? "animate-forward" : "animate-reverse"
+                            className={` w-[75%] ${isHovered ? "animate-forward" : "animate-reverse"
                                 }`}
                             onMouseEnter={() => setIsHovered(true)}
                             onMouseLeave={() => setIsHovered(false)}
@@ -78,38 +80,45 @@ const Banner = () => {
                 >
                     <img
                         data-aos="zoom-in"
-                        className="transform transition duration-300 hover:scale-103"
+                        className="transform transition duration-400 hover:scale-107"
                         src={heroimg}
                         alt="heroimg"
                         onMouseEnter={() => setBlock(true)}
                         onMouseLeave={() => setBlock(false)}
                     />
 
-                    <div className='grid gap-y-2 absolute right-0 lg:-right-12 3xl:right-0 top-20 sm:top:40'>
+                    <div className='grid gap-y-2 absolute right-0 lg:-right-12 3xl:right-0 top-0 xl:top-10 2xl:top-16  sm:top:40'>
                         <a href="#" target='_blank' data-aos="fade-right">
-                            <img className='w-14 box' src={eagle} alt="" />
+                            <img className='w-8  sm:w-14 box' src={eagle} alt="" />
                         </a>
-                        <a href="#" target='_blank' data-aos="fade-right" data-aos-delay="200">
-                            <img className='w-14 box' src={bnb} alt="" />
+                        <a href="#" target='_blank' data-aos="fade-right" data-aos-delay="50">
+                            <img className='w-8  sm:w-14 box' src={bnb} alt="" />
                         </a>
-                        <a href="#" target='_blank' data-aos="fade-right" data-aos-delay="400">
-                            <img className='w-14 box' src={x} alt="" />
+                        <a href="https://x.com/hippieonsolona?s=21" target='_blank' data-aos="fade-right" data-aos-delay="100">
+                            <img className='w-8  sm:w-14 box' src={x} alt="" />
                         </a>
-                        <a href="#" target='_blank' data-aos="fade-right" data-aos-delay="600">
-                            <img className='w-14 box' src={tele} alt="" />
+                        <a href="https://t.me/+PWMrbj3qPeVkOWJh" target='_blank' data-aos="fade-right" data-aos-delay="200">
+                            <img className='w-8  sm:w-14 box' src={tele} alt="" />
                         </a>
+
+                        <a href="https://youtube.com/@hippieofdubai?si=evXR068xUg0SZb5P" target='_blank' data-aos="fade-right" data-aos-delay="300">
+                            <img className='w-8  sm:w-14 box' src={youtube} alt="" />
+                        </a>
+
+                        <a href="https://www.tiktok.com/@hippieofdubai?_t=ZM-8tZzMFYInAb&_r=1" target='_blank' data-aos="fade-right" data-aos-delay="400">
+                            <img className='w-8  sm:w-14 box ' src={tiktok} alt="" />
+                        </a>
+                        <a className='w-8  sm:w-14 box bg-black  rounded-lg md:rounded-xl py-2' href="https://www.instagram.com/hippieofdubai?igsh=MXF4eDFxdXBseXpuNQ%3D%3D&utm_source=qr" data-aos="fade-right" data-aos-delay="400" target='_blank'> <IoLogoInstagram className='font-extrabold  md:text-4xl text-[#FBC42E]'></IoLogoInstagram></a>
                     </div>
 
                   
                     {
                         block ?
-                            <div className={`absolute top-10 right-56 z-50  `}>
-                                <Lottie
-                                    animationData={animation}
-                                    loop={true}
-                                    className={`w-32 z-50 rotate-20  `}
+                            <div className={`absolute top-3 md:top-5  2xl:top-10 2xl:right-36 right-10 md:right-10 z-50  `}>
+                               <img
+                               className={`w-56 z-50 rotate-20  `}
                                     data-aos="fade-down"
-                                />
+                               src={animation} alt="" />
                             </div> : ''
 
                     }
